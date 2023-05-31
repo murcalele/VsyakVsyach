@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Информация о товаре Табурет Легенда</title>
+  <link href='images/logo.png' rel='icon' type='image/x-icon'>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class='wrapper'>
+  <header class="header">
+    <div class="logo" onclick="goToMainPage()">
+        <img class="image" src="../images/logo.png" alt="Logo">
+        <div class="header-title">
+            <h1>Всякая всячина</h1>
+        </div>
+    </div>
+</header>
+    <nav class="nav-links">
+        <a href="../index.html" title="Главная">Главная</a>
+        <div class='opener'>
+            <a href="../store.html" title="Товары">Товары</a>
+            <div class='opener-content'>
+                <a href="../furniture.html" title="Мебель">Мебель</a>
+                <a href="../accessories.html" title="Аксессуары">Аксессуары</a>
+                <a href="../electronics.html" title="Электроника">Электроника</a>
+            </div>
+        </div>
+        <a href="../information.html" title="О нас">О нас</a>
+        <a href="../siteMap.html" title="Карта сайта">Карта сайта</a>
+    </nav>
+    <div class="goodsContainer">
+        <div class="goodsInformation">
+            <div class='slider'>
+                <button class='toPrevious' onclick='showSlides.prevSlide()'><div class="customButtonText">&lt;</div></button>
+                <img id="myImg1" src='../goods/image2.png' class='slides' alt="Фотография 1">
+                <img id="myImg2" src='../goods/image2_1.png' class='slides' alt="Фотография 2">
+                <img id="myImg3" src='../goods/image2_2.png' class='slides' alt="Фотография 3">
+                <button class='toNext' onclick='showSlides.nextSlide()'><div class="customButtonText">&gt;</div></button>
+            </div>
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+            <div class='text-content'>
+                <h2>Табурет Легенда</h2>
+                <h2>Цена - 1199р.</h2>
+            </div>
+        <div class='section'>
+            <div class='text-content'>
+                <h2>Любимая классика для вашего дома</h2>
+                <p>Табурет из гнутоклеенного шпона 100% березы. Табуретка выдержит до 150 кг.
+                Стул подойдет для бани, для дачи, как садовая мебель. Незаменима как мебель для кухни, когда нужно найти место всем гостям.
+                Табуретки штабелируются и занимают мало места. </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <button onclick="scrollToTop()" id="scrollTopButton" title="Наверх">&#8679;</button>
+  <script src="../main.js"></script>
+</div>
+</body>
+<div class='footer'>
+        <a onclick=redirectToVk()>ВКонтакте</a>
+        <a onclick=redirectToTg()>Telegram</a>
+</div>
+</html>

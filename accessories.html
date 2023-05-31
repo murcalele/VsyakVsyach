@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Аксессуары</title>
+  <link href='images/logo.png' rel='icon' type='image/x-icon'>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class='wrapper'>
+  <header class="header">
+    <div class="logo" onclick="goToMainPage()">
+        <img class="image" src="images/logo.png" alt="Logo">
+        <div class="header-title">
+            <h1>Всякая всячина</h1>
+        </div>
+    </div>
+</header>
+    <nav class="nav-links">
+        <a href="index.html" title="Главная">Главная</a>
+        <div class='opener'>
+            <a href="store.html" title="Товары">Товары</a>
+            <div class='opener-content'>
+                <a href="furniture.html" title="Мебель">Мебель</a>
+                <a href="accessories.html" title="Аксессуары">Аксессуары</a>
+                <a href="electronics.html" title="Электроника">Электроника</a>
+            </div>
+        </div>
+        <a href="information.html" title="О нас">О нас</a>
+        <a href="siteMap.html" title="Карта сайта">Карта сайта</a>
+    </nav>
+  <div class="goodsContainer">
+    <div class="good" id="accessory1">
+      <img class="imageGood" src="goods/image1.png" alt="Рюкзак Reverse Side ">
+      <div>
+        <div>Наименование товара - Рюкзак Reverse Side</div>
+        <div>Цена товара - 1999р.</div>
+        <button class="customButton" onclick=goToGoodPage("accessory1.html")><div class="customButtonText">Перейти на страницу товара</div></button>
+      </div>
+    </div>
+    <div class="good">
+      <img class="imageGood" src="goods/image4.png" alt="Кубик Рубика">
+      <div>
+        <div>Наименование товара - Профессиональный Кубик Рубика</div>
+        <div>Цена товара - 1499р.</div>
+        <button class="customButton" onclick=goToGoodPage("accessory2.html")><div class="customButtonText">Перейти на страницу товара</div></button>
+      </div>
+    </div>
+    <div class="good">
+      <img class="imageGood" src="goods/image6.png" alt="Кружка Game Over">
+      <div>
+        <div>Наименование товара - Кружка Game Over</div>
+        <div>Цена товара - 999р.</div>
+        <button class="customButton" onclick=goToGoodPage("accessory3.html")><div class="customButtonText">Перейти на страницу товара</div></button>
+      </div>
+    </div>
+  </div>
+  <button onclick="scrollToTop()" id="scrollTopButton" title="Наверх">&#8679;</button>
+  <script src="main.js"></script>
+</div>
+</body>
+<div class='footer'>
+        <a onclick=redirectToVk()>ВКонтакте</a>
+        <a onclick=redirectToTg()>Telegram</a>
+</div>
+</html>

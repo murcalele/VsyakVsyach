@@ -9,6 +9,7 @@
 </head>
 <body>
 <div>
+  <img src='images/menu.png' class='burger' onclick='openBurger()'>
   <header class="header">
     <div class="logo" onclick="goToMainPage()">
       <img class="image" src="images/logo.png" alt="Logo">
@@ -17,7 +18,8 @@
       </div>
     </div>
   </header>
-  <nav class="nav-links">
+  <div class='burger-content'>
+  <nav class="nav-links burger-content hide">
         <a href="index.html" title="Главная">Главная</a>
         <div class='opener'>
             <a href="store.html" title="Товары">Товары</a>
@@ -29,12 +31,14 @@
         </div>
         <a href="information.html" title="О нас">О нас</a>
         <a href="siteMap.html" title="Карта сайта">Карта сайта</a>
+        <a href="siteNews.html" title="Новости сайта">Новости сайта</a>
     </nav>
+    </div>
   <div class="section">
     <section class="text-content about">
       <h2>Карта сайта</h2>
       <ul>
-        <li><a href="mainPage.html" title="Главная">Главная</a></li>
+        <li><a href="index.html" title="Главная">Главная</a></li>
         <li><a href="store.html" title="Товары">Товары</a>
             <ul>
                 <li><a href="furniture.html" title="Мебель">Мебель</a></li>
@@ -44,20 +48,25 @@
         </li>
         <li><a href="information.html" title="О нас">О нас</a></li>
         <li><a href="siteMap.html" title="Карта сайта">Карта сайта</a></li>
+        <li><a href="siteNews.html" title="Новости сайта">Новости сайта</a></li>
       </ul>
     </section>
     <div class="section">
             <div class="ad-content2" onclick="redirectToOzon()">
                 <img class="adImage2" src="ad/ozon2.png" alt="Good Image">
             </div>
-  </div>
-  
+    </div>
+    <div class="ad-content3" onclick="redirectToOzon()">
+                <img class="adImage" src="ad/ozon.png" alt="Good Image">
+            </div>
   <button onclick="scrollToTop()" id="scrollTopButton" title="Наверх">&#8679;</button>
   <script src="main.js"></script>
 </div>
 </body>
 <div class='footer'>
-        <a onclick=redirectToVk()>ВКонтакте</a>
-        <a onclick=redirectToTg()>Telegram</a>
-  </div>
+    <p>Email: info@vasyavashego.ru</p>
+    <p>Телефон +7 123 456-7890</p>
+    <a onclick=redirectToVk()>ВКонтакте</a>
+    <a onclick=redirectToTg()>Telegram</a>
+</div>
 </html>

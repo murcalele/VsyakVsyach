@@ -9,6 +9,7 @@
 </head>
 <body>
 <div class='wrapper'>
+  <img src='images/menu.png' class='burger' onclick='openBurger()'>
   <header class="header">
     <div class="logo" onclick="goToMainPage()">
         <img class="image" src="images/logo.png" alt="Logo">
@@ -17,7 +18,8 @@
         </div>
     </div>
 </header>
-    <nav class="nav-links">
+    <div class='burger-content'>
+    <nav class="nav-links burger-content hide">
         <a href="index.html" title="Главная">Главная</a>
         <div class='opener'>
             <a href="store.html" title="Товары">Товары</a>
@@ -29,7 +31,9 @@
         </div>
         <a href="information.html" title="О нас">О нас</a>
         <a href="siteMap.html" title="Карта сайта">Карта сайта</a>
+        <a href="siteNews.html" title="Новости сайта">Новости сайта</a>
     </nav>
+    </div>
   <div class="goodsContainer">
     <div class="good" id="accessory1">
       <img class="imageGood" src="goods/image1.png" alt="Рюкзак Reverse Side ">
@@ -117,7 +121,9 @@
 </div>
 </body>
 <div class='footer'>
-        <a onclick=redirectToVk()>ВКонтакте</a>
-        <a onclick=redirectToTg()>Telegram</a>
+    <p>Email: info@vasyavashego.ru</p>
+    <p>Телефон +7 123 456-7890</p>
+    <a onclick=redirectToVk()>ВКонтакте</a>
+    <a onclick=redirectToTg()>Telegram</a>
 </div>
 </html>

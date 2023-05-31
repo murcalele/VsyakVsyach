@@ -9,6 +9,7 @@
 </head>
 <body>
 <div>
+  <img src='images/menu.png' class='burger' onclick='openBurger()'>
   <header class="header">
     <div class="logo" onclick="goToMainPage()">
       <img class="image" src="images/logo.png" alt="Logo">
@@ -17,7 +18,8 @@
       </div>
     </div>
   </header>
-  <nav class="nav-links">
+  <div class='burger-content'>
+  <nav class="nav-links burger-content hide">
         <a href="index.html" title="Главная">Главная</a>
         <div class='opener'>
             <a href="store.html" title="Товары">Товары</a>
@@ -29,7 +31,9 @@
         </div>
         <a href="information.html" title="О нас">О нас</a>
         <a href="siteMap.html" title="Карта сайта">Карта сайта</a>
+        <a href="siteNews.html" title="Новости сайта">Новости сайта</a>
     </nav>
+    </div>
   <div class="section">
     <section class="text-content">
       <h2>О нашем магазине</h2>
@@ -73,7 +77,7 @@
         <p>Адрес: г. Москва, ул. Пресненская наб., 8 стр 1, 123112</p>
       </div>
       <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8539.665643750775!2d37.541069335665355!3d55.74821460443618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bdd017303b9%3A0xd1f63f945a2450c2!2z0JzQvtGB0LrQstCwINCh0LjRgtC4!5e0!3m2!1sru!2snl!4v1685516824546!5m2!1sru!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8539.665643750775!2d37.541069335665355!3d55.74821460443618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bdd017303b9%3A0xd1f63f945a2450c2!2z0JzQvtGB0LrQstCwINCh0LjRgtC4!5e0!3m2!1sru!2snl!4v1685516824546!5m2!1sru!2snl" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <h2>Адреса наших магазинов</h2>
       <div class="address">
@@ -104,7 +108,9 @@
 </div>
 </body>
 <div class='footer'>
-        <a onclick=redirectToVk()>ВКонтакте</a>
-        <a onclick=redirectToTg()>Telegram</a>
+    <p>Email: info@vasyavashego.ru</p>
+    <p>Телефон +7 123 456-7890</p>
+    <a onclick=redirectToVk()>ВКонтакте</a>
+    <a onclick=redirectToTg()>Telegram</a>
 </div>
 </html>

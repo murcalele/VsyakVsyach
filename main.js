@@ -3,6 +3,10 @@ function goToGoodPage(value) {
     window.location.href = "goodspages/" + value;
 }
 
+function goToNewItemPage() {
+    window.location.href = "goodspages/furniture1.html"
+}
+
 //Переход к вк
 function redirectToVk() {
     window.open('https://vk.com/purpleppassion', '_blank');
@@ -44,6 +48,16 @@ function redirectToAuto() {
 window.onscroll = function() {
     scrollFunction();
 };
+
+function openBurger() {
+    let nav = document.querySelector('nav');
+    let burgerContent = document.getElementsByClassName('burger_content');
+    let header = document.querySelector('header');
+    nav.classList.toggle('show');
+    burgerContent[0].classList.toggle('show');
+    burgerContent[1].classList.toggle('show');
+    header.classList.toggle('show');
+}
 
 function scrollFunction() {
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
@@ -135,3 +149,12 @@ const showSlides = {
     }
 }
 showSlides.showTheFirst();
+
+function openBurger() {
+    let burgerContent = document.getElementsByClassName('burger-content');
+    let header = document.getElementsByClassName('header');
+    burgerContent[0].classList.toggle('showBurger');
+    burgerContent[1].classList.toggle('hide');
+    burgerContent[1].classList.toggle('showBurger');
+    header[0].classList.toggle('hide');
+}

@@ -27,6 +27,14 @@ body {
     text-decoration: none;
 }
 
+.footer p {
+    color: white;
+    text-transform: uppercase;
+    padding-right: 5px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
 .footer a:hover {
     background-color: #337aff;
 }
@@ -244,6 +252,10 @@ nav {
     cursor: pointer;
 }
 
+.ad-content3{
+    display: none;
+}
+
 .ad-content-side{
     padding: 20px;
     max-width: 330px;
@@ -447,4 +459,67 @@ textarea {
     justify-content: center;
     background: #005bff;
     cursor: pointer;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1100px) {
+    .burger {
+        display: flex !important;
+        cursor: pointer;
+        height: 3em;
+        width: 3em;
+        background-color: #00406b;
+        padding: 0.5em;
+        border-radius: 3em;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 101;
+    }
+
+    .burger-content .opener:hover .opener-content {
+        display: none;
+    }
+
+    .burger-content {
+        transform: translateX(100%);
+        display: flex !important;
+        flex-direction: column !important;
+        background-color: transparent !important;
+        transition: all 0.3s;
+        height: 0;
+    }
+
+    .showBurger {
+        transform: translateX(0%) !important;
+        background-color: #00406b !important;
+        transition: all 0.3s;
+        height: 100vh;
+        position:sticky;
+        top:0;
+    }
+
+    .hide {
+        display: none !important;
+    }
+    .ad-content-side {
+        display: none;
+    }
+    .ad-content2{
+        display: none;
+    }
+    .ad-content3{
+            padding: 20px;
+            max-width: 330px;
+            max-height: 330px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+            background: rgba(97, 131, 162, 0.1);
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+}
+
+.burger {
+    display: none;
 }
